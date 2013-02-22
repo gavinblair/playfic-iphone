@@ -6,7 +6,7 @@ function getpage(href){
 		href = "explore";
 	}
 	$.ajax({
-		url: 'server.php',
+		url: 'http://www.zoeandgavin.com/server.php',
 		data: "q="+href,
 		type: 'get',
 		success: function(data){
