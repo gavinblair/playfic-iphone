@@ -29,6 +29,7 @@ function success(data){
 	$(data).find("iframe").remove();
 	//$(data).children("iframe").attr("src", "http://google.com");
 	$("#container").html(data);
+	window.scrollTo(0,0);
 	setInterval(function(){
 		$("#parchment, #container").css("background-color", "transparent");
 		$(".TextInput").css("width", "80%");
