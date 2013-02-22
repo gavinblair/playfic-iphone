@@ -1,12 +1,20 @@
 jQuery(document).ready(function($){
 	getpage();
+
+	$("#homebutton").click(function(){
+		getpage("explore");
+		$(this).hide();
+	});
 });
 function getpage(href){
 	if(href === undefined) {
 		href = "explore";
+		$("#homebutton").hide();
+	} else if(href != "explore") {
+		$("#homebutton").show();
 	}
 	$.ajax({
-		url: 'http://www.zoeandgavin.com/server.php',
+		url: 'http://www.zoeandgavin.com/server.php', //http://www.zoeandgavin.com/
 		data: "q="+href,
 		type: 'get',
 		success: function(data){

@@ -76,6 +76,18 @@ html, body {
     padding: 1em;
     font-weight: 700;
     text-shadow: 0 0 25px black;
+    padding-top: .5em;
+}
+#homebutton {
+    height: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: .25em 0 .5em .5em;
+    cursor: pointer;
 }
 #container { background: transparent; }
 
